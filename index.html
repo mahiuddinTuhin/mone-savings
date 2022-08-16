@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./global.css">
+    <title>Functional Bank</title>
+</head>
+<body>
+    <header class="bg-slate-100 pt-1 pb-5 drop-shadow-md border-b-4 border-rose-400">
+        <h1 class="text-5xl text-center mt-12 ">Bank of <span class="text-7xl text-violet-500 font-bold   font-mono border-double border-4 border-rose-600  rounded-xl px-2 ">D<span class="text-6xl">H</span>A<span class="text-6xl">K</span>A</span></h1>
+    </header>
+
+    <main>
+
+
+        <!-- Dashboard -->
+
+
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-8 w-3/4 mx-auto">
+                <div class="bg-violet-600 px-8 py-2 text-white rounded drop-shadow-xl text-center" >
+                    <h4 class="text-3xl">Deposit</h4>
+                    <h2 class="font-medium text-4xl">$<span id="deposit-total">00</span></h2>
+                </div>
+                <div class="bg-slate-400 px-8 py-2 text-white rounded drop-shadow-xl text-center">
+                    <h4 class="text-3xl">Balance</h4>
+                    <h2 class="font-medium text-4xl">$<span id="balance-total">1483</span></h2>
+                </div>
+                <div class="bg-rose-600 px-8 py-2 text-white rounded drop-shadow-xl text-center">
+                    <h4 class="text-3xl">Withdraw</h4>
+                    <h2 class="font-medium text-4xl">$<span id="withdraw-total">00</span></h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- deposit and withdraw section -->
+        <section class="mt-16 w-3/5 mx-auto">
+            <div class="grid grid-cols-2 gap-20">
+
+                <!-- deposit amount -->
+                <div class="bg-violet-400 p-8 rounded-xl text-center flex flex-col drop-shadow-xl">
+                    <h3 class="text-4xl text-white mb-3">Your deposit</h3>
+                    <input type="number" class="py-1 px-2 rounded drop-shadow-xl" placeholder="$ amount you want to deposit" id="deposit-field">
+                    <button class="text-xl text-white bg-rose-400 mx-auto py-1 px-2 mt-8 rounded-md font-medium drop-shadow-md hover:bg-white hover:text-violet-500" id="btn-deposit">Submit</button>
+                </div>
+
+                <!-- withdraw amount -->
+                <div class="bg-rose-400 p-8 rounded-xl text-center flex flex-col drop-shadow-xl">
+                    <h3 class="text-4xl text-white mb-3">Your withdraw</h3>
+                    <input type="number" class="py-1 px-2 rounded drop-shadow-xl" placeholder="$ amount you want to deposit"  id="withdraw-field">
+                    <button
+                        class="text-xl text-white bg-violet-400 mx-auto py-1 px-2 mt-8 rounded-md font-medium drop-shadow-md hover:bg-white hover:text-rose-500" id="btn-withdraw">Submit</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 pt-8 pb-1 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+                    viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl">Bank of DHAKA</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020
+                DHAKA —
+                <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                    target="_blank">@phero</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a class="text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                        viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+    
+
+    <script src="./balance.js"></script>
+    <script src="./deposit.js"></script>
+    <script src="./withdraw.js"></script>
+</body>
+</html>
